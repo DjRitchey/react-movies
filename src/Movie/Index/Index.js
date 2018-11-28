@@ -22,13 +22,22 @@ class MovieIndex extends Component {
     return this.state.movies.map(movie => {
       return (
         <tr key={movie.id}>
-          <td>
+          <td  style={{
+              paddingTop: '15px'
+            }}>
             {movie.id}
           </td>
           <td>
+          <a
+            className="btn"
+          >
             {movie.title}
+            </a>
           </td>
-          <td>
+          <td style={{
+              paddingTop: "15px"
+          }}
+          >
             {movie.description}
           </td>
           <td>

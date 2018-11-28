@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MovieForm from '../Form'
+import MovieForm from '../Form/Form.js'
 
 class MovieEdit extends Component {
   render() {
