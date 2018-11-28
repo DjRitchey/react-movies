@@ -30,6 +30,7 @@ class MovieIndex extends Component {
           <td>
           <a
             className="btn"
+            onClick={e => this.handleDetails(movie.id)}
           >
             {movie.title}
             </a>
@@ -62,6 +63,10 @@ class MovieIndex extends Component {
 
   handleEdit(movieId) {
     this.props.history.push(`/movies/${movieId}/edit`)
+  }
+
+  handleDetails(movieId) {
+    this.props.history.push(`/movies/${movieId}`)
   }
 
   handleRemove(movieId) {

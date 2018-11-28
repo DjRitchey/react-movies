@@ -17,6 +17,7 @@ class Details extends Component {
   render() {
     return(
       <div>
+        details page
       </div>
     )
   }
